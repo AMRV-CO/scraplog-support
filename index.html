@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScrapLog — Support</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0b0d10;
+    --surface:  #13161b;
+    --border:   #1f2329;
+    --text:     #e8eaed;
+    --muted:    #7a8290;
+    --accent:   #c8a96e;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  html { background: var(--bg); color: var(--text); font-family: var(--font); }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 24px 48px;
+  }
+
+  .wordmark {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 56px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+
+  .contact-link:hover { border-color: var(--accent); }
+
+  .faq { display: flex; flex-direction: column; gap: 0; }
+
+  .faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq-item:last-child { border-bottom: none; }
+
+  .faq-item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .faq-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  footer {
+    margin-top: 64px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="wordmark">ScrapLog</div>
+
+<main>
+  <div class="hero">
+    <h1>Support</h1>
+    <p>ScrapLog is a capture tool for scrap yard visits — built to work offline, with no account or cloud required.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="card">
+    <div class="card-label">Contact</div>
+    <h2>Get in touch</h2>
+    <p>For questions, bug reports, or feedback, send us an email and we'll get back to you as soon as possible.</p>
+    <a href="mailto:amrvco@gmail.com" class="contact-link">
+      amrvco@gmail.com
+    </a>
+  </div>
+
+  <div class="card faq">
+    <div class="card-label">FAQ</div>
+
+    <div class="faq-item">
+      <h3>Where are my captures stored?</h3>
+      <p>Everything is stored privately on your device. Captures are never uploaded to a server or added to your Photos library.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I export my visit?</h3>
+      <p>Tap the Save button (top right) to export the whole visit as a ZIP file. You can share it via AirDrop, Files, WhatsApp, email, or any other app.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I tapped "New Visit" and lost my captures — can I recover them?</h3>
+      <p>New Visit permanently wipes the current session from the device. Captures cannot be recovered. Export regularly via Save before starting a new visit.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does ScrapLog work without an internet connection?</h3>
+      <p>Yes — ScrapLog is fully offline. No internet connection is required to capture, organize, or export.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What data does ScrapLog collect?</h3>
+      <p>None. ScrapLog has no backend, no analytics, and no account system. Your captures stay on your device.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 AMRV &nbsp;·&nbsp; ScrapLog for iOS
+</footer>
+
+</body>
+</html>
